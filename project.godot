@@ -10,14 +10,28 @@ config_version=5
 
 [application]
 
-config/name="FPS"
-run/main_scene="uid://d4jnsk63ho08a"
+config/name="Bloodgun"
+run/main_scene="uid://co1btbguexjup"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
 
 project/assembly_name="FPS"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/func_godot/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "pink",
+"res://levels/": "gray",
+"res://player/": "purple",
+"res://scenes/": "green",
+"res://trenchbroom/": "orange"
+}
 
 [input]
 

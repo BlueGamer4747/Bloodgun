@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://khvjms0yiupj"]
+
+[ext_resource type="Texture2D" uid="uid://dp2t2j3x6luq5" path="res://trenchbroom/textures/rocky_terrain_04_diff_4k.jpg" id="1_asiap"]
+
+[resource]
+albedo_texture = ExtResource("1_asiap")
+metallic_specular = 0.0
+texture_filter = 2

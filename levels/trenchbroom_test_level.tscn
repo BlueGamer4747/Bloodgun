@@ -1,0 +1,94 @@
+[gd_scene load_steps=15 format=4 uid="uid://co1btbguexjup"]
+
+[ext_resource type="Script" uid="uid://cwu5cf7a0awcd" path="res://addons/func_godot/src/map/func_godot_map.gd" id="1_xv4m5"]
+[ext_resource type="Resource" uid="uid://bo6g3fc2f3y78" path="res://trenchbroom/map_settings.tres" id="2_fi0yc"]
+[ext_resource type="Material" uid="uid://khvjms0yiupj" path="res://trenchbroom/textures/rocky_terrain_04_diff_4k.tres" id="3_l8eoa"]
+[ext_resource type="Material" uid="uid://dpfjuspduhs4x" path="res://trenchbroom/textures/wood.tres" id="4_dd18r"]
+[ext_resource type="PackedScene" uid="uid://bwj5y51b6l1ml" path="res://player/player.tscn" id="5_cra0n"]
+[ext_resource type="Texture2D" uid="uid://b2jw8hv1j2xiw" path="res://Textures/qwantani_dusk_2_puresky.jpg" id="6_fi0yc"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l8eoa"]
+_surfaces = [{
+"aabb": AABB(-36, 12, 2.5, 59.5, 1.5, 50.5),
+"attribute_data": PackedByteArray("mpmZvyMOnb8wlvw/Iw6dvzCW/D/kxZa/mpmZv+TFlr+F61FA5MWWv8kvFj/kxZa/yS8WPyMOnb+F61FAIw6dv4XrUcAUcWhAhetRwIVZDcDJLxa/hVkNwMkvFr8UcWhAhetRQBRxaEDJLxY/FHFoQMkvFj+FWQ3AhetRQIVZDcCF61HAIw6dv8kvFr8jDp2/yS8Wv+TFlr+F61HA5MWWv5qZmT/kxZa/MJb8v+TFlr8wlvy/Iw6dv5qZmT8jDp2/6LSBv7vjRT+PwnW/NJVrP0t+sb6740U/WfKLP9oHSb/sUTg/YVYjv83MTD/WKOK/zcxMv6V9kL/sUTi/Iw6dv/nFkr9hVqO/WfKLP3RzYz9Z8os/dHNjP/nFkj/7wT0/7FE4P/vBPT/5xZK/YVYjv/nFkr+SAfW/7FE4v1O57r/sUTi/YVYjv1nyiz/aB0m/zcxMP9Yo4r/5xZI/kgH1v0t+sT4jDp2/DnTaPqV9kL+4HoU/Iw6dvw=="),
+"format": 34359742487,
+"index_count": 63,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGwAcAB0AHgAfACAAIQAiACMAIQAjACQAJQAmACcAJQAnACgAKQAqACsALAAtAC4A"),
+"material": ExtResource("3_l8eoa"),
+"name": "rocky_terrain_04_diff_4k",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 47,
+"vertex_data": PackedByteArray("AAC8QQAASEEAACBAAAAQwgAASEEAACBAAAAQwgAAQEEAACBAAAC8QQAAQEEAACBAAAAQwgAAQEEAAFRCAAAQwgAAQEEAACBAAAAQwgAASEEAACBAAAAQwgAASEEAAFRCAAAQwgAAQEEAAFRCAAC8QQAAQEEAAFRCAAC8QQAAQEEAACBAAAAQwgAAQEEAACBAAAAQwgAASEEAAFRCAAAQwgAASEEAACBAAAC8QQAASEEAACBAAAC8QQAASEEAAFRCAAC8QQAASEEAAFRCAAC8QQAASEEAACBAAAC8QQAAQEEAACBAAAC8QQAAQEEAAFRCAAC8QQAAQEEAAFRCAAAQwgAAQEEAAFRCAAAQwgAASEEAAFRCAAC8QQAASEEAAFRCAACQQQAASEEAAEhBAACIQQAAUEEAAGBBAACwQAAASEEAAEhBAADgQAAAWEEAAJxBAACwQAAASEEAAEhBAACIQQAAUEEAAGBBAACIQQAAUEEAAGBBAACQQQAASEEAAEhBAACUQQAASEEAAKRBAADgQAAAWEEAAJxBAADgQAAAWEEAAJxBAACwQAAASEEAAKRBAACwQAAASEEAAEhBAACwQAAASEEAAKRBAACUQQAASEEAAKRBAACQQQAASEEAAEhBAACwQAAASEEAAEhBAADgQAAAWEEAAJxBAACIQQAAUEEAAGBBAACUQQAASEEAAKRBAACwQAAASEEAAKRBAADgQAAAWEEAAJxBAACUQQAASEEAAKRB/////wAA/7//////AAD/v/////8AAP+//////wAA/78AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9/AAD//////38AAP//////fwAA//////9/AAD//////3////9//7//f////3//v/9/////f/+//3////9//7////9//////////3//////////f/////////9///////9//3////+//3//f////7//f/9/////v/9//3////+//5///wAA/z//n///AAD/P/+f//8AAP8/EG4u/f9//78Qbi79/3//vxBuLv3/f/+/16mc2P//AADXqZzY//8AANepnNj//wAAzEzMzP9//z/MTMzM/3//P8xMzMz/f/8/zEzMzP9//z//fwAA//////9/AAD//////38AAP//////fwAA/////zKJSPD/f/+/MolI8P9//78yiUjw/3//v/9//7////8//3//v////z//f/+/////Pw==")
+}, {
+"aabb": AABB(-7.5, 14, 26.5, 10, 1.5, 1.5),
+"attribute_data": PackedByteArray("CtcjP0JgZb8K1yM/zcxMv3VMcD7NzEy/dUxwPkJgZb9LfrE/HC9dvzEIrD/OzEy/MQisP0NgZb9LfrE/HC9dv0t+sT8cL12/WDm0P87MTL8yCKw/zsxMv1g5tL+PwnU/WDm0v1g5tD4xCKy/WDm0PjEIrL+PwnU/WDm0vxsvXb8xCKy/QmBlvzEIrL/NzEy/WDm0v83MTL9YObQ/WDm0PjEIrD+PwnU/MQisP1g5tD5YObQ/WDm0Pkt+sT+2830/MgisP4/CdT91THC+Gi9dvwrXI7/MzEy/JE0pvxovXb91THC+HC9dv3VMcL7OzEy/Ctcjv87MTL8="),
+"format": 34359742487,
+"index_count": 39,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABwAIAAkABwAJAAoACwAMAA0ACwANAA4ADwAQABEADwARABIAEwAUABUAFgAXABgAGQAaABsAHAAdAB4A"),
+"material": ExtResource("4_dd18r"),
+"name": "wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 31,
+"vertex_data": PackedByteArray("AADgwAAAeEEAANRBAADgwAAAYEEAANRBAAAgQAAAYEEAANRBAAAgQAAAeEEAANRBAADwwAAAcEEAANxBAADgwAAAYEEAANRBAADgwAAAeEEAANRBAADwwAAAcEEAANxBAADwwAAAcEEAANxBAADgwAAAYEEAAOBBAADgwAAAYEEAANRBAADgwAAAYEEAAOBBAAAgQAAAYEEAAOBBAAAgQAAAYEEAANRBAADgwAAAYEEAANRBAAAgQAAAcEEAAOBBAAAgQAAAeEEAANRBAAAgQAAAYEEAANRBAAAgQAAAYEEAAOBBAAAgQAAAcEEAAOBBAADgwAAAeEEAANRBAAAgQAAAeEEAANRBAAAgQAAAcEEAAOBBAADwwAAAcEEAANxBAADgwAAAeEEAANRBAAAgQAAAcEEAAOBBAADgwAAAYEEAAOBBAADwwAAAcEEAANxBAAAgQAAAcEEAAOBBAAAgQAAAYEEAAOBBAADgwAAAYEEAAOBB/////wAA/7//////AAD/v/////8AAP+//////wAA/78AAKmq/3//vwAAqar/f/+/AACpqv9//7+qKlRV/3//v6oqVFX/f/+/qipUVf9//7+qKlRV/3//v/9/AAD//////38AAP//////fwAA//////9/AAD/////////f/////////9//////////3//////////f///////f//f/3//v/9//9//f/+//3//3/9//7/ufaTU/3//v+59pNT/f/+/7n2k1P9//7/Ne92n////v8173af///+/zXvdp////7//f/9/////v/9//3////+//3//f////78=")
+}]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dd18r"]
+points = PackedVector3Array(23.5, 12.5, 53, 23.5, 12, 53, -36, 12.5, 53, -36, 12, 53, 23.5, 12.5, 2.5, 23.5, 12, 2.5, -36, 12.5, 2.5, -36, 12, 2.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cra0n"]
+points = PackedVector3Array(2.4999847, 15.000002, 28, 2.5, 15, 28, -6.999995, 14, 28, -7, 14, 28, 2.5, 15, 28, 2.5, 15, 28, 2.5, 14, 28, -7, 14, 28, 2.5, 15.000002, 28, -7.5000014, 15.000003, 27.499998, -7.4999995, 15.000003, 27.499998, 2.5, 15.000001, 28.000002, -7, 14, 28, -7.4999995, 14.999999, 27.499998, 2.5, 15.000002, 27.999998, -7.0000114, 15.499998, 26.500023, -6.9999866, 15.500001, 26.500002, -7.5000005, 15.000001, 27.5, -7, 15.5, 26.5, 2.5, 15.5, 26.5, -7.0000005, 15.500001, 26.5, 2.5, 14, 26.5, -6.9999995, 13.999999, 26.5, -7, 14, 26.5, -7, 14, 26.5, -6.9999995, 13.999999, 26.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1b6de"]
+points = PackedVector3Array(18.499996, 12.5, 20.499998, 6.9999995, 13.5, 19.499998, 18.5, 12.500002, 20.499996, 7.000002, 13.5, 19.500002, 5.499999, 12.500001, 20.499996, 18.5, 12.5, 20.499996, 6.9999986, 13.499999, 19.499996, 18.499998, 12.5, 20.500006, 7.0000005, 13.5, 19.5, 17, 13.000001, 14.000005, 17.000002, 13.000002, 14.000003, 16.999987, 13, 14, 5.499999, 12.5, 12.5, 5.4999986, 12.5, 12.5, 18.000002, 12.5, 12.5, 5.500004, 12.5, 12.5, 5.5, 12.499999, 12.5, 16.999998, 13, 13.999999)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5ytcx"]
+points = PackedVector3Array(-18, 19, 24.5, -18, 12.5, 24.5, -23.5, 19, 24.5, -23.5, 12.5, 24.5, -18, 19, 24, -18, 12.5, 24, -23.5, 19, 24, -23.5, 12.5, 24)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_oneid"]
+panorama = ExtResource("6_fi0yc")
+
+[sub_resource type="Sky" id="Sky_q767e"]
+sky_material = SubResource("PanoramaSkyMaterial_oneid")
+
+[sub_resource type="Environment" id="Environment_slhvj"]
+background_mode = 2
+sky = SubResource("Sky_q767e")
+
+[node name="trenchbroom_test_level" type="Node3D"]
+
+[node name="FuncGodotMap" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.850903, 0, -23)
+script = ExtResource("1_xv4m5")
+local_map_file = "uid://bpm0sycs4idt5"
+map_settings = ExtResource("2_fi0yc")
+metadata/_custom_type_script = "uid://cwu5cf7a0awcd"
+
+[node name="entity_0_worldspawn" type="StaticBody3D" parent="FuncGodotMap"]
+collision_mask = 0
+
+[node name="entity_0_mesh_instance" type="MeshInstance3D" parent="FuncGodotMap/entity_0_worldspawn"]
+mesh = SubResource("ArrayMesh_l8eoa")
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape3D" parent="FuncGodotMap/entity_0_worldspawn"]
+shape = SubResource("ConvexPolygonShape3D_dd18r")
+
+[node name="entity_0_brush_1_collision_shape" type="CollisionShape3D" parent="FuncGodotMap/entity_0_worldspawn"]
+shape = SubResource("ConvexPolygonShape3D_cra0n")
+
+[node name="entity_0_brush_2_collision_shape" type="CollisionShape3D" parent="FuncGodotMap/entity_0_worldspawn"]
+shape = SubResource("ConvexPolygonShape3D_1b6de")
+
+[node name="entity_0_brush_3_collision_shape" type="CollisionShape3D" parent="FuncGodotMap/entity_0_worldspawn"]
+shape = SubResource("ConvexPolygonShape3D_5ytcx")
+
+[node name="Player" parent="." instance=ExtResource("5_cra0n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901505, 19.048195, 15.995865)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_slhvj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 0.33278662, 0.94300216, 0, -0.94300216, 0.33278662, 0, 39.6457, 0)
+light_color = Color(1, 0.8745098, 0.7882353, 1)

@@ -1,0 +1,66 @@
+[gd_scene load_steps=13 format=3 uid="uid://d4jnsk63ho08a"]
+
+[ext_resource type="PackedScene" uid="uid://bwj5y51b6l1ml" path="res://player/player.tscn" id="1_avm4t"]
+[ext_resource type="Texture2D" uid="uid://b2jw8hv1j2xiw" path="res://Textures/qwantani_dusk_2_puresky.jpg" id="1_o8y75"]
+[ext_resource type="Texture2D" uid="uid://bwlbhv5sp8q7h" path="res://Textures/rocky_terrain_02_diff_4k.jpg" id="2_61swc"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_lqige"]
+panorama = ExtResource("1_o8y75")
+filter = false
+
+[sub_resource type="Sky" id="Sky_avm4t"]
+sky_material = SubResource("PanoramaSkyMaterial_lqige")
+
+[sub_resource type="Environment" id="Environment_o0eve"]
+background_mode = 2
+sky = SubResource("Sky_avm4t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ivlp"]
+albedo_texture = ExtResource("2_61swc")
+metallic = 1.0
+normal_enabled = true
+bent_normal_enabled = true
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_o8y75"]
+material = SubResource("StandardMaterial3D_6ivlp")
+size = Vector2(30, 30)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_61swc"]
+data = PackedVector3Array(15, 0, 15, -15, 0, 15, 15, 0, -15, -15, 0, 15, -15, 0, -15, 15, 0, -15)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o8y75"]
+albedo_color = Color(0.37916803, 0.2244308, 0.096825026, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_homd6"]
+material = SubResource("StandardMaterial3D_o8y75")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_eosex"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_o0eve")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5762184, 0.8172958, 0, -0.8172958, 0.5762184, 0, 16.093193, 0)
+light_color = Color(1, 0.8784314, 0.79607844, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_o8y75")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_61swc")
+
+[node name="Player" parent="." instance=ExtResource("1_avm4t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.288468, 1.0642247, 10.296987)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.1693707, 0, 0, 0, 0.39120415, 0, 0, 0, 1, 0, 1.4748077, 0)
+mesh = SubResource("BoxMesh_homd6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_eosex")

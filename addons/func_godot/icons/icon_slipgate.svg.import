@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2ol6083f61yi"
-path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+uid="uid://bw74kacajcaxb"
+path="res://.godot/imported/icon_slipgate.svg-f42668b28b92f93c031f56d95dfcf5a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.svg"
-dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"]
+source_file="res://addons/func_godot/icons/icon_slipgate.svg"
+dest_files=["res://.godot/imported/icon_slipgate.svg-f42668b28b92f93c031f56d95dfcf5a6.ctex"]
 
 [params]
 
