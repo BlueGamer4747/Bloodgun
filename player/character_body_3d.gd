@@ -6,7 +6,7 @@ const JUMP_VELOCITY = 4.5
 @export var TILT_LOWER_LIMIT := deg_to_rad(-90)
 @export var TILT_UPPER_LIMIT := deg_to_rad(90)
 @export var CAMERA_CONTROLLER : Node3D
-@export var MOUSE_SENTIVITY : float = 0.5
+@export var MOUSE_SENTIVITY : float = 0.3
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var _mouse_rotation : Vector3
