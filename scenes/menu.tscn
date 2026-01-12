@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://2ho3nu24m2j1"]
+
+[ext_resource type="Script" uid="uid://dvxuxq2a8tl4n" path="res://scenes/menu.gd" id="1_yqeox"]
+[ext_resource type="Texture2D" uid="uid://ctbi2sqlyewcn" path="res://Textures/bra.png" id="2_vjb58"]
+
+[node name="menu" type="Node2D"]
+script = ExtResource("1_yqeox")
+
+[node name="Bra" type="Sprite2D" parent="."]
+position = Vector2(624, 302)
+texture = ExtResource("2_vjb58")
+
+[node name="Botton_manager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 72.0
+offset_top = 267.0
+offset_right = 112.0
+offset_bottom = 307.0
+size_flags_horizontal = 6
+size_flags_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Start" type="Button" parent="Botton_manager"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -15.5
+offset_right = 150.0
+offset_bottom = 49.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Start"
+
+[node name="Quit" type="Button" parent="Botton_manager"]
+layout_mode = 0
+offset_top = 80.0
+offset_right = 137.0
+offset_bottom = 129.0
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 65.0
+offset_right = 468.0
+offset_bottom = 244.0
+theme_override_font_sizes/font_size = 128
+text = "Bloodgun
+"
+
+[connection signal="pressed" from="Botton_manager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Botton_manager/Quit" to="." method="_on_quit_pressed"]

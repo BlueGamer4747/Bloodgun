@@ -5,5 +5,7 @@
 [resource]
 transparency = 1
 albedo_texture = ExtResource("1_co8sb")
-metallic_specular = 0.0
+metallic = 0.41
+metallic_specular = 1.0
+roughness = 0.48
 texture_filter = 2

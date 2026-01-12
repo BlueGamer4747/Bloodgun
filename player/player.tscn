@@ -133,6 +133,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6317451, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6317451, 0)
 update_mode = 1
 
+[node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D"]
+visible = false
+light_color = Color(0.99999803, 0.998023, 0.6632398, 1)
+light_energy = 16.0
+light_indirect_energy = 15.759
+spot_range = 16.255
+spot_angle = 31.38
+spot_angle_attenuation = 0.3298771
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_qjkh3")
