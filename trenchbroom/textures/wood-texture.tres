@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b7bwshiyffhq3"]
+
+[ext_resource type="Texture2D" uid="uid://diponvla81aol" path="res://trenchbroom/textures/wgorund.jpg" id="1_yqo6b"]
+
+[resource]
+albedo_texture = ExtResource("1_yqo6b")
+metallic = 0.66
+metallic_specular = 0.61
+roughness = 0.26
+texture_filter = 2

@@ -13,13 +13,23 @@ texture = ExtResource("2_vjb58")
 [node name="Botton_manager" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 72.0
-offset_top = 267.0
-offset_right = 112.0
-offset_bottom = 307.0
+offset_left = 51.0
+offset_top = 204.0
+offset_right = 91.0
+offset_bottom = 244.0
 size_flags_horizontal = 6
 size_flags_vertical = 2
 metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Botton_manager"]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -202.0
+offset_right = 570.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 128
+text = "Bloodgun
+"
 
 [node name="Start" type="Button" parent="Botton_manager"]
 layout_mode = 1
@@ -39,19 +49,11 @@ text = "Start"
 
 [node name="Quit" type="Button" parent="Botton_manager"]
 layout_mode = 0
-offset_top = 80.0
-offset_right = 137.0
-offset_bottom = 129.0
+offset_left = -3.0
+offset_top = 74.0
+offset_right = 134.0
+offset_bottom = 123.0
 text = "Quit"
-
-[node name="Label" type="Label" parent="."]
-offset_left = 52.0
-offset_top = 65.0
-offset_right = 468.0
-offset_bottom = 244.0
-theme_override_font_sizes/font_size = 128
-text = "Bloodgun
-"
 
 [connection signal="pressed" from="Botton_manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Botton_manager/Quit" to="." method="_on_quit_pressed"]

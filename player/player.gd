@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export var TILT_LOWER_LIMIT := deg_to_rad(-90)
 @export var JUMP_VELOCITY : float = 4.5
-@export var SPEED : float = 9.0
+@export var SPEED : float = 10.0
 @export var TILT_UPPER_LIMIT := deg_to_rad(90)
 @export var CAMERA_CONTROLLER : Node3D
 @export var MOUSE_SENTIVITY : float = 0.5

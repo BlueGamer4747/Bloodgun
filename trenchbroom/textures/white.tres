@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://dblk0epla1sbn" path="res://trenchbroom/textures/white.png" id="1_iiwxs"]
 
 [resource]
+transparency = 1
 albedo_texture = ExtResource("1_iiwxs")
+metallic = 0.77
 metallic_specular = 0.0
+roughness = 0.45
 texture_filter = 2
