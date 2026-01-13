@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://brk05oxa12qnu"]
+
+[ext_resource type="Script" uid="uid://cu7dc5of4u7mq" path="res://scenes/level_select.gd" id="1_p0wlc"]
+[ext_resource type="Texture2D" uid="uid://ctbi2sqlyewcn" path="res://Textures/bra.png" id="2_2epne"]
+
+[node name="Level_select" type="Node2D"]
+script = ExtResource("1_p0wlc")
+
+[node name="Bra" type="Sprite2D" parent="."]
+position = Vector2(682, 276)
+texture = ExtResource("2_2epne")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -2.0
+offset_top = -3.0
+offset_right = 1158.0
+offset_bottom = 647.0
+
+[node name="level1" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 218.0
+offset_right = 338.0
+offset_bottom = 306.0
+theme_override_font_sizes/font_size = 64
+text = "Level 1
+"
+
+[node name="level2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 218.0
+offset_right = 632.0
+offset_bottom = 314.0
+theme_override_font_sizes/font_size = 64
+text = "Level 2
+"
+
+[node name="back" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 604.0
+offset_right = 58.0
+offset_bottom = 635.0
+text = "back
+"
+
+[connection signal="pressed" from="Control/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Control/level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Control/back" to="." method="_on_back_pressed"]

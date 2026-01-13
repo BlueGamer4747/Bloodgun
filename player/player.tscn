@@ -136,7 +136,7 @@ update_mode = 1
 size = Vector3(160, 60, 160)
 
 [node name="flashlight" parent="head/Camera3D" instance=ExtResource("2_rkbax")]
-transform = Transform3D(-2.1855693e-09, 0.006699309, 0.04954916, 0, 0.049549155, -0.0066993097, -0.049999997, -2.928361e-10, -2.1658626e-09, 0.2066223, -0.2683792, -0.08592367)
+transform = Transform3D(-2.1855693e-09, 0.006699309, 0.04954916, 0, 0.049549155, -0.0066993097, -0.049999997, -2.928361e-10, -2.1658626e-09, 0.2066223, -0.2683792, 0.012293637)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

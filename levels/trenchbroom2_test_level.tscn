@@ -325,7 +325,7 @@ points = PackedVector3Array(-23.999998, 12.5, 25.499998, -23.999998, 12.999999, 
 [node name="trenchbroom_test_level" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("11_eoxlm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.530695, 13.493555, 20.344208)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.530695, 13.50228, 20.344208)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_slhvj")
