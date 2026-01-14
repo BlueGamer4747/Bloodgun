@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b38j7mcyitcdd"]
+
+[ext_resource type="PackedScene" uid="uid://bnr2tja0tauud" path="res://Models/sabre.blend" id="1_q52qv"]
+
+[node name="sabre" instance=ExtResource("1_q52qv")]
+transform = Transform3D(4.371138e-08, -8.7422784e-08, 1, 8.742278e-08, 1, 8.742278e-08, -1, 8.742277e-08, 4.371139e-08, 0, 0, 0)
