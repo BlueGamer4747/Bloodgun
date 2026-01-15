@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bwj5y51b6l1ml"]
+[gd_scene load_steps=8 format=3 uid="uid://bwj5y51b6l1ml"]
 
 [ext_resource type="Script" uid="uid://b27orktwaochd" path="res://player/player.gd" id="1_oul6g"]
 [ext_resource type="PackedScene" uid="uid://maltg3a2o5vq" path="res://scenes/flashlight.tscn" id="2_rkbax"]
-[ext_resource type="PackedScene" uid="uid://b38j7mcyitcdd" path="res://scenes/sabre.tscn" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_onrkg"]
 
@@ -137,10 +136,7 @@ update_mode = 1
 size = Vector3(160, 60, 160)
 
 [node name="flashlight" parent="head/Camera3D" instance=ExtResource("2_rkbax")]
-transform = Transform3D(-2.1855693e-09, 0.006699309, 0.04954916, 0, 0.049549155, -0.0066993097, -0.049999997, -2.928361e-10, -2.1658626e-09, 0.20556962, -0.26662582, 0.013143033)
-
-[node name="sabre" parent="head/Camera3D" instance=ExtResource("3_g1dw6")]
-transform = Transform3D(4.371138e-08, -8.7422784e-08, 1, 8.742278e-08, 1, 8.742278e-08, -1, 8.742277e-08, 4.371139e-08, -0.25482443, -0.5011343, -0.52238685)
+transform = Transform3D(-2.1855693e-09, 0.006699309, 0.04954916, 0, 0.049549155, -0.0066993097, -0.049999997, -2.928361e-10, -2.1658626e-09, 0.2066223, -0.2683792, 0.012293637)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
